@@ -11,7 +11,6 @@
     <title>Hello, world!</title>
 
     <style>
-        
         /* Estilos adicionales para hacer el botón más receptivo */
         @media screen and (max-width: 992px) {
             /* Si la pantalla es más pequeña que 992px */
@@ -20,16 +19,6 @@
                 width: 50%; /* Ajustar el ancho del botón en porcentaje */
             }
         }
-        @media screen and (max-width: 768px) {
-        .btn {
-            margin-left: 5%;
-            width: 90%;
-        }
-        .btn span {
-            margin-left: 10%;
-            font-size: 20px;
-        }
-    }
     </style>
 </head>
 <body>
@@ -41,11 +30,36 @@
                     <input type="file" id="file" style="display: none;" accept="image/*"> 
                     <button type="button" class="btn btn-primary btn-responsive" style="margin-right: 77%; margin-top: 2px; overflow: hidden;">Foto de Perfil</button>
                     
-                    <label type="button" class="btn btn-primary btn-responsive" style="margin-right: 10%; margin-top: -390px; overflow: hidden; width: 40%; height: 160px; background-color: #ADD8E6; color: blue; border: none; font-family: 'Eras Bold ITC', sans-serif; font-size: 40px; font-weight: bold;">
-                        <span style="margin-left: 5%; margin-top: 20px;">Eres</span>
-                        <span style="margin-left: 1%; margin-top: 80px;">administrador</span>
-                    </label>                                                                       
-                </div>
+                    <div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: auto; background-color: #ADD8E6; padding: 20px;">
+                        <label type="button" class="btn btn-primary btn-responsive" style="width: 40%; background-color: #ADD8E6; color: blue; border: none; font-family: 'Eras Bold ITC', sans-serif; font-size: 40px; font-weight: bold; position: relative;">
+                            <span style="position: absolute; top: -90px; margin-left: -160px;">Eres administrador</span>
+                        </label>
+                        <div style="display: flex; margin-top: 20px;">
+                            <span style="margin-left: 40px; font-size: 30px; font-family: 'Gill Sans MT (Cuerpo)', sans-serif;">Nombres:</span>
+                            <span style="margin-left: 20px; font-size: 30px; font-family: 'Gill Sans MT (Cuerpo)', sans-serif;">Robert</span>
+                            <span style="margin-left: 20px; font-size: 30px; font-family: 'Gill Sans MT (Cuerpo)', sans-serif;">Camilo</span>
+                        </div>
+                        <div style="display: flex; margin-top: 20px;">
+                            <span style="margin-left: 40px; font-size: 30px; font-family: 'Gill Sans MT (Cuerpo)', sans-serif;">Apellidos:</span>
+                            <span style="margin-left: 20px; font-size: 30px; font-family: 'Gill Sans MT (Cuerpo)', sans-serif;">Vargas</span>
+                            <span style="margin-left: 20px; font-size: 30px; font-family: 'Gill Sans MT (Cuerpo)', sans-serif;">Castillo</span>
+                        </div>
+                        <div style="display: flex; margin-top: 20px;">
+                            <span style="margin-right: 40px; font-size: 30px; font-family: 'Gill Sans MT (Cuerpo)', sans-serif;">Teléfono:</span>
+                            <span style="margin-right: 20px; font-size: 30px; font-family: 'Gill Sans MT (Cuerpo)', sans-serif;">320456987</span>
+                        </div>
+                        <div style="display: flex; margin-top: 20px;">
+                            <span style="margin-right: 10px; font-size: 30px; font-family: 'Gill Sans MT (Cuerpo)', sans-serif;">Documento:</span>
+                            <span style="margin-right: 20px; font-size: 30px; font-family: 'Gill Sans MT (Cuerpo)', sans-serif;">45886514</span>
+                        </div>
+                        
+                        <br><br><br><form action="autenticar.html">
+                            <button type="submit" class="btn btn-primary" style="display: block; margin-bottom: -237px; margin-left: 200px; width: 298px; height: 56px; background-color: red; color: white; border-color: red;">
+                                Autenticar
+                            </button>
+                        </form>                                                   
+                    </div>                    
+                </div>                    
             </div>
         </div>
     </div>
