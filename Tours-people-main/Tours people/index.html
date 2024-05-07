@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="ruta/estilos.css">
-
-    <title>Hello, world!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container text-center">
-        <div class="row justify-content-center">
-            <div class="col" style="position: relative;">
-                <div style="width: 500px; height: 600px; background-color: #ADD8E6; border-radius: 20px; position: absolute; top: 100px; left: 50%; transform: translateX(-50%); z-index: 1; box-shadow: 0px 0px 40px rgba(0, 0, 0, 60); border: 1px solid orange;">
-                    <p style="color: white; font-size: 40px; font-family: 'Arial Black', sans-serif; text-align: center; margin-top: 20px; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">TOURS PEOPLE</p>
-                    <ul style="position: absolute; bottom: 255px; left: 50%; transform: translateX(-50%); z-index: 2; list-style: none; padding: 0;">
-                        <label class="form-check-label" for="correo" style="display: block; margin-bottom: 2px; color: white; font-family: 'Gill Sans MT (Cuerpo)', sans-serif; font-size: 30px; text-align: center; margin-left: 30px; text-shadow: 0 0 8px yellow, 0 0 8px yellow, 0 0 8px black, 1px -1px 0 yellow;">Correo</label>
-                        <input type="text" name="correo" id="correo" class="form-control" style="display: block; margin-bottom: 36px; box-shadow: 0px 0px 40px rgba(0, 0, 0, 60); margin-left: 20px; width: 350px; height: 56px;">
-                        
+<div class="container" style=" background-size: cover; background-position: center;">
+    <div class="row justify-content-center">
+        <div class="col">
+            <div style="position: relative;">
+                <div style="position: absolute; width: 100%; height: 100%; z-index: -1;">
+                    <img src="bus.png"style="width: 50%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+                    <br>
+                    <img src="C:\Users\FORMACION\Documents\tours people\img\bus.png"style="width: 50%; height: 100%; object-fit: cover; position: absolute; top: 0; right:0;">
+                    <br>
+                    <img src="bus.png"style="width: 50%; height: 100%; object-fit: cover; position: absolute; top: 0; right:0;">
+                </div>
+                <div class="datos" >
+                    <p style="color: white; font-size: 40px; font-family: 'Arial Black', sans-serif; text-align: center; margin-top: 20px; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                        TOUR PEOPLE
+                    </p>
+                    <div class="card-body">
+                        <form>
+                           <div class="form-group">
+                             <label for="fullName" style="display: block; margin-bottom: 2px; color: white; font-family: 'Gill Sans MT (Cuerpo)', sans-serif; font-size: 30px; text-align: center; margin-left: 30px; text-shadow: 0 0 8px yellow, 0 0 8px yellow, 0 0 8px black, 1px -1px 0 yellow;">Correo</label>
+                             <input type="text" class="form-control" id="fullcorreo" placeholder=""style="display: block; margin-bottom: 36px; box-shadow: 0px 0px 40px rgba(0, 0, 0, 60); margin-left: 30px; width: 610px; height: 56px;">
+                           </div>
+                           
                         <label class="form-check-label" for="edad" style="display: block; margin-bottom: 2px; color: white; font-family: 'Gill Sans MT (Cuerpo)', sans-serif; font-size: 30px; text-align: center; margin-left: 30px; text-shadow: 0 0 8px yellow, 0 0 8px yellow, 0 0 8px black, 1px -1px 0 yellow;">Edad + 18</label>
-                        <select name="edad" id="edad" class="form-select" style="display: block; margin-bottom: 36px; box-shadow: 0px 0px 40px rgba(0, 0, 0, 60); margin-left: 20px; width: 350px; height: 56px;">
+                        <select name="edad" id="edad" class="form-select" style="display: block; margin-bottom: 36px; box-shadow: 0px 0px 40px rgba(0, 0, 0, 60); margin-left: 30px; width: 610px; height: 56px;">
                         <option value="seleccionar-Edad">Seleccionar Edad</option>
                         <option value="18-25">18-25</option>
                         <option value="25-30">25-30</option>
@@ -32,21 +40,20 @@
                         <option value="35-60">35-60</option>
                         </select>
 
-                        <label class="form-check-label" for="contraseña" style="display: block; margin-bottom: 2px; color: white; font-family: 'Gill Sans MT (Cuerpo)', sans-serif; font-size: 30px; text-align: center; margin-left: 30px; text-shadow: 0 0 8px yellow, 0 0 8px yellow, 0 0 8px black, 1px -1px 0 yellow;">Contraseña</label>
-                        <input type="text" name="contraseña" id="contraseña" class="form-control" style="display: block; margin-bottom: 36px; box-shadow: 0px 0px 40px rgba(0, 0, 0, 60); margin-left: 20px; width: 350px; height: 56px;">
-                        
-                        <form action="administrador.html">
-                            <button type="submit" class="btn btn-primary" style="display: block; margin-bottom: -237px; box-shadow: 0px 0px 40px rgba(0, 0, 0, 60); margin-left: 45px; width: 298px; height: 56px; background-color: white; color: black; border-color: white;">Ingresar</button>
-                        </form>   
-                    </ul>
-                    <img src="bas.png" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); margin-right: 900px; width: 450px; height: 450px;">
+                            <div class="form-group">
+                                <label for="password" style="display: block; margin-bottom: 2px; color: white; font-family: 'Gill Sans MT (Cuerpo)', sans-serif; font-size: 30px; text-align: center; margin-left: 30px; text-shadow: 0 0 8px yellow, 0 0 8px yellow, 0 0 8px black, 1px -1px 0 yellow;">Contraseña</label>
+                                <input type="password" class="form-control" id="password" placeholder="" style="display: block; margin-bottom: 36px; box-shadow: 0px 0px 40px rgba(0, 0, 0, 60); margin-left: 30px; width: 610px; height: 56px;">>
+                            </div>
+
+                            <a href="administrador.html" class="btn btn-primary" style="display: block; margin-bottom: -237px; margin-left: 174px; width: 298px; height: 56px; background-color: white; color: black; border-color: white; text-align: center; line-height: 56px;">Ingresar</a>
+                    </div>
                 </div>
-                <img src="si.jpg" class="img-fluid" style="width: 730px; height: 800px; inline-block; z-index: 2;">
-                <img src="si.jpg" class="img-fluid" style="width: 730px; height: 800px; inline-block; margin-left: -170px; z-index: 2;">
             </div>
         </div>
     </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
